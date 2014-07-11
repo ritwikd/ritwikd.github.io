@@ -21,11 +21,6 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('../assets/back.png');
-    background-repeat:no-repeat;
-	background-attachment:fixed;
 }
 
 #top {
