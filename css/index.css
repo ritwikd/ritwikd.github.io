@@ -1,0 +1,198 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+    font-family: 'Lato';
+}
+
+a {
+    color: #000;
+    transition: all 100ms linear;
+    -webkit-transition: all 100ms linear;
+}
+
+h1 {
+    font-size: 36px;
+    width: 100%;
+}
+
+#top {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+#name {
+    padding: 2%;
+    font-size: 300%;
+    transition: all 100ms linear;
+    -webkit-transition: all 100ms linear;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+}
+
+.content {
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    font-size: 18px;
+}
+
+.headicon {
+    float: right;
+    margin-top: 1%;
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+}
+
+
+/* About */ 
+
+	#about hr {
+	    display: block;
+	    border: 0;
+	    border-top: 5px solid #5CB8E6;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+
+	#about a:hover {
+	    color: #5CB8E6;
+	    transition: all 100ms linear;
+	    -webkit-transition: all 100ms linear;
+	}
+
+	.abouticon {
+	    width: 5%;
+	    border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	}
+
+/* Project */
+
+	#project hr {
+	    display: block;
+	    border: 0;
+	    border-top: 5px solid #85FF85;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+
+	#project a:hover {
+	    color: #85FF85;
+	    transition: all 100ms linear;
+	    -webkit-transition: all 100ms linear;
+	}
+
+	.projhead {
+	    text-align: right;
+	}
+
+/* Contact */
+
+
+	#contact hr {
+	    display: block;
+	    border: 0;
+	    border-top: 5px solid #AD85FF;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+
+	#contact a:hover {
+	    color: #AD85FF;
+	    transition: all 100ms linear;
+	    -webkit-transition: all 100ms linear;
+	}
+
+	.contact-items {
+	}
+
+	.contact-link {
+	    width: 100%;
+	    font-size: 24px;
+	}
+
+	.contact-icon {
+	    float: left;
+	    padding-right: 3%;
+	    font-size: 24px;
+	}
+
+/* Blog */
+
+#blog hr {
+    display: block;
+    border: 0;
+    border-top: 5px solid #FF9D00;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#blog a:hover {
+    color: #FF9D00;
+    transition: all 100ms linear;
+    -webkit-transition: all 100ms linear;
+}
+
+/* Resume */
+
+	#resume hr {
+	    display: block;
+	    border: 0;
+	    border-top: 5px solid #E88080;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+
+	#resume a:hover {
+	    color: #E88080;
+	    transition: all 100ms linear;
+	    -webkit-transition: all 100ms linear;
+	}
+
+	.abouticon {
+	    width: 5%;
+	    border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	}
+
+
+
+.latest {
+    padding: 3%;
+    background-color: #EEE;
+    --webkit-box-shadow: inset 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.latest {
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #top {
+        -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+}

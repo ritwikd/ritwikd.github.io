@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Ritwik Dutta
+      </title>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+   </head>
+   <body>
+      <div id = "top">
+         <p id = "name">
+            Ritwik Dutta
+         </p>
+      </div>
+      <div class = "container" id = "about">
+         <div class = "content">
+            <h1>
+               About
+               <img class = "headicon abouticon" src="http://ritwikd.com/assets/img.png">
+               </i>
+               <hr>
+            </h1>
+            <p>
+               Hello. I'm Ritwik. I'm in high school. I like writing code. I also like making websites, listening to music, playing video games, watching movies, and reading books. 
+               <br>
+               <br>
+               You could be on this site for any number of reasons. Maybe someone pointed it out to you. Maybe you know me somehow. Maybe it's accidental. Want to know more? Check out my 
+               <a href="assets/resume.pdf">
+               resume
+               </a>
+               . 
+               <br>
+               <br>
+               If there's anything you find interesting, I'd like to hear. Please send me a message. Thanks.
+            </p>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class = "container" id = "project">
+         <div class = "content">
+            <h1>
+               Projects
+               <i class = "headicon fa fa-code">
+               </i>
+               <hr>
+            </h1>
+            <p>
+            <h2 class = "projhead">
+               <a target="_newtab" href = "http://securewallet.ritwikd.com">
+               securewallet
+               </a>
+            </h2>
+            SecureWallet is a cool little password manager I wrote as a side project. It uses 128-bit AES encryption. It's written in pure Python, but I've only             tested on Linux.
+            <h2 class = "projhead">
+               <a target="_newtab" href = "http://rpncalc.ritwikd.com">
+               rpn-calc
+               </a>
+            </h2>
+            rpn-calc is a neat little command-line reverse Polish notation calculator that I wrote one day because I thought it was interesting idea.
+            <h2 class = "projhead">
+               <a target="_newtab" href = "http://kare.progger.io/">
+               K.A.R.E
+               </a>
+            </h2>
+            K.A.R.E is a project that I started at a hackathon with some friends. It is a GitHub recommendation engine, and is a work-in-progress.
+            </p>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div  class = "container" id = "contact">
+         <div class = "content">
+            <h1>
+               Contact
+               <i class = "headicon fa fa-comment">
+               </i>
+               <hr>
+            </h1>
+            <p>
+            <div id="contact-items">
+               <span class="contact-icon fa fa-envelope">		</span>
+               <a class = "contact-link" href="mailto:ritzymail@gmail.com">ritzymail@gmail.com</a>
+               <br>
+               <span class="contact-icon fa fa-map-marker">	</span>
+               <a class = "contact-link" href="http://bit.ly/ritwiklocation">Sunnyvale, California, USA</a>
+               <br>
+               <span class="contact-icon fa fa-phone">			</span>
+               <a class = "contact-link" href="tel:+14084063722">1 (408) 406 3722</a>
+               <br>
+               <span class="contact-icon fa fa-google-plus">	</span>
+               <a class = "contact-link" href="https://plus.google.com/+RitwikDutta/posts">Ritwik Dutta</a>
+               <br>
+               <span class="contact-icon fa fa-linkedin">		</span>
+               <a class = "contact-link" href="https://www.linkedin.com/in/ritwikduttausa">Ritwik Dutta</a>
+               <br>
+            </div>
+            </p>
+         </div>
+      </div>
+      <br><br><br>
+      <div class = "container" id = "resume">
+         <div class = "content">
+            <h1>
+               Resume
+            
+               <i class = "headicon fa fa-list-alt">
+               </i>
+               <hr>
+            </h1>
+               <div>
+                  You can find my resume <a href="assets/result.html">here as a webpage</a> or <a href="assets/resume.pdf"> here as a PDF</a>.
+               </div>
+
+         </div>
+      </div>
+      <br><br><br>
+      <div class = "container" id = "blog">
+         <div class = "content">
+            <h1>
+               Blog
+               <i class = "headicon fa fa-edit"></i>
+               <hr>
+            </h1>
+            </h1> You can find my blog at <a href="http://blog.ritwikd.com">blog.ritwikd.com</a>.<br>
+            <i>Here's the latest couple posts:</i>
+            <p id = "blogcont">
+            </p>
+         </div>
+      </div>
+      <br><br><br>
+      <script type="text/javascript" src = "http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src = "http://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js"/></script>
+      <script type="text/javascript" src = "js/jquery.ui.tumblr.rss.js"/></script>
+      <script type="text/javascript">
+         var temp = '<div class="item latest"> <h2 class="ptitle"> {entry.regular-title} </h2> <span class="pbody"> {entry.regular-body} </span> </div>';
+         $(function(){
+            	$("#blogcont").tumblrRss({username: "ritwikdutta", limit: 5, template: temp});
+               
+         });
+         
+      </script>
+      <script type="text/javascript">
+      </script>
+   </body>
+</html>
