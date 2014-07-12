@@ -132,18 +132,13 @@ h1 {
 	}
 
 	#contact-links {
-	    float: left;
-	    width: 20%;
+		margin-left: 6%;
 	    font-size: 24px;
 	    line-height: 1.1;
 	}
 
 	.contact-icon {
 	    font-size: 30px;
-	}
-
-	#wrapper {
-		margin-bottom: 15%;
 	}
 
 /* Blog */
