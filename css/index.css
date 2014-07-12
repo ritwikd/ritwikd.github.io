@@ -19,8 +19,11 @@ h1 {
 #background_wrap {
     z-index: -1;
     position: fixed;
+    height: 100%;
+    width: auto;
     top: 0;
     left: 0;
+  
 }
 
 #top {
