@@ -150,10 +150,12 @@ h1 {
 	#contact-icons {
 		float: left;
 		width: 3%;
+		padding-right: 10%;
 	}
 
 	#contact-links {
-		margin-left: 6%;
+		padding-left: 10%;
+		width: 80%;
 	    font-size: 24px;
 	    line-height: 1.1;
 	}
