@@ -25,8 +25,8 @@
 				<li class="resume link nav unselectable" onclick="javascript: processLink(this);">		RESUME 		</li>
 				<li class="blog link nav unselectable" onclick="javascript: processLink(this);">		BLOG 		</li>
 			</ul>
-			<img class="nav img" src="assets/img.png">
 		</div>
+		
 		<div class="section content about">
 			<div class="section header about">
 				<div class="section header paragraph">
@@ -44,7 +44,7 @@
 				<br><br>
 				<div class="section content skills">
 					<h2 class="section content skills header">SKILLS</h2>
-					<br><br>
+					<br>
 					<table class="section content skills">
 							<tr>
 								<td class="section content skills skill">python</td>
@@ -74,16 +74,7 @@
 							</tr>
 
 							<tr>
-								<td class="section content skills skill">c++</td>
-								<td class="section content skills progress" style="">
-									<div class="section content skills bar cplusplus">
-										<div class="section content skills amt cplusplus">2 years</div>
-									</div>
-								</td>
-							</tr>
-
-							<tr>
-								<td class="section content skills skill" style="padding-top: 25px;">sdl</td>
+								<td class="section content skills skill"  style="padding-top: 25px;">sdl</td>
 								<td class="section content skills progress" style="padding-top: 25px;">
 									<div class="section content skills bar sdl">
 										<div class="section content skills amt sdl">2 years</div>
@@ -99,8 +90,6 @@
 									</div>
 								</td>
 							</tr>
-
-
 
 							<tr>
 								<td class="section content skills skill"  style="padding-top: 25px;">html</td>
@@ -154,7 +143,7 @@
 						</td>
 						<td class="section content projdisp desc">
 							<h2>ghettoCI</h2>
-							ghettoCI is a very low-end (hence "ghetto") continuous integration system written in Python. It is currently a work in progress. The script currently pulls and merges data from a remote on a scheduled timer. Planned features are: drag-and-drop deployability, email notifications, a basic web interface, and external user configuration. I worked on this entire project.
+							ghettoCI is a very low-end continuous integration system written in Python. It is currently a work in progress. The script currently pulls and merges data from a remote on a scheduled timer. Planned features are: drag-and-drop deployability, email notifications, a basic web interface, and external user configuration. I worked on this entire project.
 						</td>
 					</tr>	
 
@@ -251,6 +240,20 @@
 			</div>
 		</div>
 
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			function processLink (element) {
+				var clickedItem = element.className.split(" ")[0];
+				switch(clickedItem) {
+					case 'blog':
+						window.location = "http://blog.ritwikd.com";
+						break;
+					case 'resume':
+						window.location = "assets/resume.pdf"
+						break;
+				}
+			}
+		</script>
 	</body>
 </html>
 
