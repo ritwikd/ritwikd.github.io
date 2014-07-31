@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round:400,500,700,900);
 
 body {
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-style: bold;
     margin: 0px;
     padding: 0px;
@@ -48,7 +48,7 @@ body {
 .nav.link {
     color: #FFF;
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px;
     list-style: none;
     text-align: left;
@@ -74,10 +74,11 @@ body {
     -ms-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
-    position: absolute;
+    float: right;
+    position: relative;
+    top: -92px;
     right: 0px;
-    top: 0px;
-    height: 220px;
+    height: 92px;
 }
 
 .about {
@@ -178,18 +179,14 @@ body {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 60px;
 }
-
-.section.name.paragraph:before, .section.name.paragraph:after  {
-
-    display: inline-block;
-    content: "";
     height: 3px;
     background: #000;
     position: relative;
     width: 20%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 10px;
 }
 
@@ -205,6 +202,7 @@ body {
     max-width: 100%;
     color: #FFF;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .section.header.paragraph {
@@ -218,7 +216,7 @@ body {
     padding: 50px;
     padding-left: 125px;
     padding-right: 125px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section.content.skills {
@@ -235,19 +233,17 @@ body {
 }
 
 .section.content.skills {
-
-    width: 90%;
+    width: 100%;
 }
 
 .section.content.skills.skill {
 
-    width: 5%;
-    font-size: 24px;
+    width: 10%;
+    font-size: 26px;
     text-transform: uppercase;
 }
 
 .section.content.skills.progress {
-
     float: right;
     width: 95%;
 }
@@ -268,54 +264,55 @@ body {
     background-color: #0099FF;
 }
 
-.section.content.skills.amt.python {
-
+.section.content.skills.amt {
     float: right;
 }
+
 .section.content.skills.bar.python {
 
     width: 100%;
 }
-.section.content.skills.amt.java {
 
-    float: right;
-}
 .section.content.skills.bar.java {
 
-    width: 75%;
+    width: 60%;
 }
-.section.content.skills.amt.linux {
 
-    float: right;
-}
 .section.content.skills.bar.linux {
 
-    width: 85%;
+    width: 80%;
 }
-.section.content.skills.amt.html {
 
-    float: right;
+.section.content.skills.bar.cplusplus {
+
+    width: 40%;
 }
+
 .section.content.skills.bar.html {
 
-    width: 90%;
+    width: 100%;
 }
-.section.content.skills.amt.css {
 
-    float: right;
-}
 .section.content.skills.bar.css {
 
-    width: 90%;
+    width: 100%;
 }
-.section.content.skills.amt.js {
 
-    float: right;
-}
 .section.content.skills.bar.js {
 
-    width: 75%;
+    width: 40%;
 }
+
+.section.content.skills.bar.unreal {
+
+    width: 40%;
+}
+
+.section.content.skills.bar.sdl {
+
+    width: 40%;
+}
+
 .section.content.projdisp {
 
     background-color: #FFF;
@@ -368,13 +365,8 @@ body {
 		font-size: 42px;
 	}
 
-	.section.name.paragraph:before, .section.name.paragraph:after {
-
-		display: none;
-	}
 
     .section.header {
-
         text-align: center;
     }
 
@@ -402,8 +394,8 @@ body {
     }
 
     .nav.img {
-
-        height: 195px;
+        top: -80px;
+        height: 80px;
     }
 
     .section.name.paragraph {
@@ -411,13 +403,8 @@ body {
         font-size: 36px;
     }
 
-    .section.name.paragraph:before, .section.name.paragraph:after {
-
-        display: none;
-    }
 
     .section.header {
-
         text-align: center;
     }
 
@@ -440,10 +427,6 @@ body {
 
 @media only screen and (max-width: 900px) {
 
-    .section.name.paragraph:before, .section.name.paragraph:after {
-
-            width: 10%;
-    }
     .section.content.paragraph {
 
         padding: 50px;
@@ -452,10 +435,6 @@ body {
 
 @media only screen and (max-width: 550px) {
 
-    .section.name.paragraph:before, .section.name.paragraph:after {
-
-            width: 5%;
-    }
 
     .section.content.paragraph {
 

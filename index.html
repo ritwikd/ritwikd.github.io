@@ -15,20 +15,17 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div class="header">
-			<ul class="nav menu">
-				<li class="about link nav unselectable" onclick="javascript: processLink(this);">		ABOUT 		</li>
-				<li class="projects link nav unselectable" onclick="javascript: processLink(this);">	PROJECTS 	</li>
-				<li class="contact link nav unselectable" onclick="javascript: processLink(this);">		CONTACT 	</li>
-				<li class="resume link nav unselectable" onclick="javascript: processLink(this);">		RESUME 		</li>
-				<li class="blog link nav unselectable" onclick="javascript: processLink(this);">		BLOG 		</li>
-			</ul>
-			<img class="nav img" src="assets/img.png">
-		</div>
 		<div class="section name">
 			<div class="section name paragraph">
 				RITWIK DUTTA 
 			</div> 
+		</div>
+		<div class="header">
+			<ul class="nav menu">
+				<li class="resume link nav unselectable" onclick="javascript: processLink(this);">		RESUME 		</li>
+				<li class="blog link nav unselectable" onclick="javascript: processLink(this);">		BLOG 		</li>
+			</ul>
+			<img class="nav img" src="assets/img.png">
 		</div>
 		<div class="section content about">
 			<div class="section header about">
@@ -71,16 +68,45 @@
 								<td class="section content skills skill">linux</td>
 								<td class="section content skills progress" style="">
 									<div class="section content skills bar linux">
-										<div class="section content skills amt linux">3 years</div>
+										<div class="section content skills amt linux">4 years</div>
 									</div>
 								</td>
 							</tr>
 
 							<tr>
+								<td class="section content skills skill">c++</td>
+								<td class="section content skills progress" style="">
+									<div class="section content skills bar cplusplus">
+										<div class="section content skills amt cplusplus">2 years</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="section content skills skill" style="padding-top: 25px;">sdl</td>
+								<td class="section content skills progress" style="padding-top: 25px;">
+									<div class="section content skills bar sdl">
+										<div class="section content skills amt sdl">2 years</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="section content skills skill">unreal</td>
+								<td class="section content skills progress">
+									<div class="section content skills bar unreal">
+										<div class="section content skills amt unreal">2 years</div>
+									</div>
+								</td>
+							</tr>
+
+
+
+							<tr>
 								<td class="section content skills skill"  style="padding-top: 25px;">html</td>
 								<td class="section content skills progress" style="padding-top: 25px;">
 									<div class="section content skills bar html">
-										<div class="section content skills amt html">3 years</div>
+										<div class="section content skills amt html">5 years</div>
 									</div>
 								</td>
 							</tr>
@@ -89,7 +115,7 @@
 								<td class="section content skills skill">css</td>
 								<td class="section content skills progress">
 									<div class="section content skills bar css">
-										<div class="section content skills amt css">3 years</div>
+										<div class="section content skills amt css">5 years</div>
 									</div>
 								</td>
 							</tr>
@@ -225,36 +251,6 @@
 			</div>
 		</div>
 
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript">
-			function processLink (element) {
-				var clickedItem = element.className.split(" ")[0];
-				switch(clickedItem) {
-					case 'blog':
-						window.location = "http://blog.ritwikd.com";
-						break;
-					case 'resume':
-						window.location = "assets/resume.pdf"
-						break;
-					case 'about':
-						$('html, body').animate({
-					        scrollTop: $(".section.content.about").offset().top
-					    }, 250);
-					    break;
-					case 'projects':
-						$('html, body').animate({
-					        scrollTop: $(".section.content.projects").offset().top
-					    }, 250);
-					    break;
-					case 'contact':
-						$('html, body').animate({
-					        scrollTop: $(".section.content.contact").offset().top
-					    }, 250);
-					    break;
-
-				}
-			}
-		</script>
 	</body>
 </html>
 
