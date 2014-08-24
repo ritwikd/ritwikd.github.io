@@ -37,6 +37,7 @@ function generatePost(postTitle, postDate, postBody) {
 	var postHTML = '';
 	postHTML += postTemplate[0] + postTitle;
 	postHTML += postTemplate[1] + postDate.substring(0, 16);
+	postBody = postBody.replace(/\u00a0/g, " ");
 	postHTML += postTemplate[2] + postBody;
 	postHTML += postTemplate[3];
 	return postHTML;
