@@ -31,7 +31,7 @@ var staticContent = {
 				'<div class="contact item"><div class="icon"><span class="entypo-twitter"></span></div><a href="http://twitter.com/ritzymail">ritzymail</a></div>'
 }
 
-var currentLink = '';
+var blogLoaded = false;
 
 function generatePost(postTitle, postDate, postBody) {
 	var postHTML = '';
@@ -47,7 +47,7 @@ function addPost(postTitle, postDate, postBody, postHolderElem) {
 	postHolderElem.append(postHTML);
 }
 
-function getBlogData() {
+function getBlogData(postHolderElem) {
 	var blogPost = {};
 	blogData = $.getJSON('http://ritwikdutta.tumblr.com/api/read/json?callback=?',
 		function(response) {
@@ -56,8 +56,8 @@ function getBlogData() {
         		addPost(blogPost['regular-title'],
         			blogPost.date,
         			blogPost['regular-body'],
-        			$('.content.wrapper'));
-        	})
+        			postHolderElem);
+        	});
 
     });
 
@@ -67,6 +67,8 @@ function getBlogData() {
     		images[i].css("display", "none");
     	};
     }
+
+    blogLoaded = true;
 }
 
 
@@ -94,7 +96,14 @@ function loadData(linkType) {
 				window.location = 'assets/resume.pdf';
 				break;
 			case 'Blog':
-				getBlogData();
+				if (blogLoaded == false) {
+					console.log("NYAH");
+					getBlogData($('.content.wrapper'));	
+				} else{
+					console.log("NYOH");
+					$('.content.wrapper').html($('.hidden.holder').html());
+				}
+				
 				break;
 			case 'Contact':
 				$(".content.wrapper").append(staticContent[linkType]);
@@ -117,3 +126,5 @@ bindEvent(document.body, 'scroll', function(e) {
 });
 
 loadData(location.hash.substring(1));
+getBlogData($('.hidden.holder'));
+
