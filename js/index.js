@@ -13,8 +13,8 @@ var staticContent = {
 	'<h3>Skills</h3><ul><li><h5>Python</h5></li><li><h5>Java</h5></li><li><h5>Linux</h5></li><li><h5>SDL</h5></li><li><h5>Unreal</h5></li><li><h5>HTML</h5></li><li><h5>CSS</h5></li><li><h5>JS</h5></li></ul>',
 	'Projects' : 'Here are some of my recent projects. <br>' +
 				'<h3 class="project title">GT Health Dashboard</h3>' +
-					'<div class="project description">The GT Health Dashboard is a software project I implemented at Georgia Tech over the summer under the guidance of a professor. It is about creating a free and open-source end-to-end software system for monitoring long term care patients in smart homes (report here).' +
-					'<br><div class="project links"><a class="project link" href="http://gtd.ritwikd.com">home</a> <a class="project link" href="http://github.com/ritwikd/gt-dashboard/">github</a></div>' +
+					'<div class="project description">The GT Health Dashboard is a software project I implemented at Georgia Tech over the summer under the guidance of a professor. It is about creating a free and open-source end-to-end software system for monitoring long term care patients in smart homes.' +
+					'<br><div class="project links"><a class="project link" href="http://gtd.ritwikd.com">home</a> <a class="project link" href="http://github.com/ritwikd/gt-dashboard/">github</a><a class="project link" href="assets/gthd.pdf">report</a></div> ' +
 				'<h3 class="project title">Max Keyboards Key Configuration Utility</h3>' +
 					'<div class="project description">I created this keyboard configuration utility for Max Keyboards. It can be used to create a customized keyboard with a variety of layouts and options. Each key can be individually customized with respect to LED and keycap color. Every key on the page is rendered entirely in CSS. I created this entire page from scratch.' +
 					'<br><div class="project links"><a class="project link" href="http://maxkey.ritwikd.com">home</a>' +
