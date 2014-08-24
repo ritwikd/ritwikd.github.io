@@ -110,22 +110,9 @@ function loadData(linkType) {
 	}
 }
 
-function bindEvent(e, eventName, callback) {
-    if(e.addEventListener) {
-        e.addEventListener(eventName, callback, false);
-    }
-    else if(e.attachEvent) {
-        e.attachEvent('on'+ eventName, callback);
-    }
-};
-
 loadData(location.hash.substring(1));
 
 $(window).load(function() {
-		bindEvent(document.body, 'scroll', function(e) {
-	    document.body.scrollLeft = 0;
-	});
-
 	if (blogLoaded == false) {
 		getBlogData($('.hidden.holder'));	
 	} 
