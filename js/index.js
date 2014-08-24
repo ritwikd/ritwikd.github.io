@@ -122,7 +122,7 @@ function bindEvent(e, eventName, callback) {
 
 loadData(location.hash.substring(1));
 
-$(document).ready(function() {
+$(window).load(function() {
 		bindEvent(document.body, 'scroll', function(e) {
 	    document.body.scrollLeft = 0;
 	});
