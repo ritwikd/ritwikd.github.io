@@ -59,17 +59,6 @@ function getBlogData() {
     });
 }
 
-function fadeOut() {
-	$(".content.wrapper").animate( {
-		opacity : 0
-	}, 150);
-}
-
-function fadeIn() {
-	$(".content.wrapper").animate( {
-		opacity : 1
-	}, 150);
-}
 
 function loadLink(link) {
 	var linkType = $(link).attr('data-type');
@@ -77,7 +66,6 @@ function loadLink(link) {
 }
 
 function loadData(linkType) {
-	fadeOut();
 	$('.content.wrapper').html('');	
 	console.log($('*[data-type="' + linkType + '"]')[0])
 	if (linkType === '') {
@@ -104,7 +92,6 @@ function loadData(linkType) {
 				break;
 		}
 	}
-	fadeIn();
 }
 
 loadData(location.hash.substring(1));
