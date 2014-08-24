@@ -97,10 +97,8 @@ function loadData(linkType) {
 				break;
 			case 'Blog':
 				if (blogLoaded == false) {
-					console.log("NYAH");
 					getBlogData($('.content.wrapper'));	
-				} else{
-					console.log("NYOH");
+				} else {
 					$('.content.wrapper').html($('.hidden.holder').html());
 				}
 				
