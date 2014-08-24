@@ -44,7 +44,6 @@ function generatePost(postTitle, postDate, postBody) {
 
 function addPost(postTitle, postDate, postBody, postHolderElem) {
 	var postHTML = generatePost(postTitle, postDate, postBody);
-	console.log(postHTML)
 	postHolderElem.append(postHTML);
 }
 
@@ -61,6 +60,13 @@ function getBlogData() {
         	})
 
     });
+
+    var images = $('img');
+    for (var i = 0; i < images.length; i++) {
+    	images[i].onerror = function () {
+    		images[i].css("display", "none");
+    	};
+    }
 }
 
 
@@ -71,7 +77,6 @@ function loadLink(link) {
 
 function loadData(linkType) {
 	$('.content.wrapper').html('');	
-	console.log($('*[data-type="' + linkType + '"]')[0])
 	if (linkType === '') {
 		location.hash = '#About';
 		loadData(location.hash.substring(1));
@@ -97,5 +102,18 @@ function loadData(linkType) {
 		}
 	}
 }
+
+function bindEvent(e, eventName, callback) {
+    if(e.addEventListener) {
+        e.addEventListener(eventName, callback, false);
+    }
+    else if(e.attachEvent) {
+        e.attachEvent('on'+ eventName, callback);
+    }
+};
+
+bindEvent(document.body, 'scroll', function(e) {
+    document.body.scrollLeft = 0;
+});
 
 loadData(location.hash.substring(1));

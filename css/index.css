@@ -27,6 +27,10 @@ h5 {
 	margin: 5px;
 }
 
+img {
+	max-width: 80%;
+	height: auto;
+}
 
 .header.name {
 	text-transform: lowercase;
@@ -60,6 +64,7 @@ a {
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+	word-wrap: break-word;
 	-webkit-transition: all 100ms linear;
 	-moz-transition: all 100ms linear;
 	-ms-transition: all 100ms linear;
@@ -150,6 +155,7 @@ a:hover {
 	}
 
 	.content.wrapper {
+		max-width: 100%;
 		padding: 25px;
 	}
 
