@@ -1,3 +1,7 @@
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 body {
 	font-family: 'Lusitana';
 	margin: 0px;
@@ -117,6 +121,17 @@ a:hover {
 	padding-top: 5px;
 }
 
+.contact.item {
+	padding-bottom: 10px;
+}
+
+.icon {
+	font-size: 26px;
+	float: left;
+	width: 32px;
+	font-family: 'entyporegular';
+}
+
 
 @media only screen and (max-width: 480px) {
 
@@ -136,6 +151,10 @@ a:hover {
 
 	.content.wrapper {
 		padding: 25px;
+	}
+
+	.contact.item {
+		padding-left: 25px;
 	}
 
 }

@@ -24,7 +24,11 @@ var staticContent = {
 				'<h3 class="project title">securewallet</h3>' +
 					'<div class="project description">securewallet is a cool little password manager I wrote as a side project. It uses 128-bit AES encryption. It\'s written in pure Python, so theoretically it should work on any platform, but I\'ve only tested on Linux. I wrote this entire application.' +
 					'<br><div class="project links"><a class="project link" href="http://securewallet.ritwikd.com">home</a> <a class="project link" href="http://github.com/ritwikd/securewallet/">github</a></div>',
-	'Contact' : 'Contact',
+	'Contact' : '<div class="contact item"><div class="icon"><span class="entypo-direction"></span></div><a href="mailto:ritzymail@gmail.com">ritzymail@gmail.com</a><br></div>' +
+				'<div class="contact item"><div class="icon"><span class="entypo-phone"></span></div><a href="tel:14084063722">1 408 406 3722</a></div>' +
+				'<div class="contact item"><div class="icon"><span class="entypo-github"></span></div><a href="http://github.com/ritwikd">ritwikd</a></div>' +
+				'<div class="contact item"><div class="icon"><span class="entypo-gplus"></span></div><a href="http://plus.google.com/+RitwikDutta/about">Ritwik Dutta</a></div>' +
+				'<div class="contact item"><div class="icon"><span class="entypo-twitter"></span></div><a href="http://twitter.com/ritzymail">ritzymail</a></div>'
 }
 
 var currentLink = '';
