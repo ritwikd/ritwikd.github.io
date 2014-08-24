@@ -120,10 +120,14 @@ function bindEvent(e, eventName, callback) {
     }
 };
 
-bindEvent(document.body, 'scroll', function(e) {
-    document.body.scrollLeft = 0;
-});
-
 loadData(location.hash.substring(1));
-getBlogData($('.hidden.holder'));
 
+$(document).ready(function() {
+		bindEvent(document.body, 'scroll', function(e) {
+	    document.body.scrollLeft = 0;
+	});
+
+	if (blogLoaded == false) {
+		getBlogData($('.hidden.holder'));	
+	} 
+});
