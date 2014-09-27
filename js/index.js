@@ -16,7 +16,7 @@ var staticContent = {
 					'<br><div class="project links"><a class="project link" href="http://gtd.ritwikd.com">home</a> <a class="project link" href="http://github.com/ritwikd/gt-dashboard/">github</a><a class="project link" href="assets/gthd.pdf">report</a></div> ' +
 				'<h3 class="project title">Max Keyboards Key Configuration Utility</h3>' +
 					'<div class="project description">I created this keyboard configuration utility for Max Keyboards. It can be used to create a customized keyboard with a variety of layouts and options. Each key can be individually customized with respect to LED and keycap color. Every key on the page is rendered entirely in CSS. I created this entire page from scratch.' +
-					'<br><div class="project links"><a class="project link" href="http://maxkey.ritwikd.com">home</a>' +
+					'<br><div class="project links"><a class="project link" href="http://www.maxkeyboard.com/max-keyboard-nighthawk-full-customize-backlit-mechanical-keyboard.html">home</a>' +
 				'<h3 class="project title">K.A.R.E</h3>' +
 					'<div class="project description">K.A.R.E is a project that I started at a hackathon with some friends. It is a GitHub recommendation engine that provides repositories similar to user selected repositories. I worked on some of the frontend and backend components of this project.' +
 					'<br><div class="project links"><a class="project link" href="http://kare.progger.io">home</a> <a class="project link" href="https://github.com/arshsab/K.A.R.E">github</a></div>' +
