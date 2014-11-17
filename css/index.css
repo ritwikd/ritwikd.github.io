@@ -1,179 +1,214 @@
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
-
+/*Google Now Card*/
 body {
-	font-family: 'Lusitana';
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
+  background: #e1e1e1;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  font-family: 'Roboto';
 }
 
-.bold {
-	font-weight: 700;
+#col1 {
+  padding-left: 15px;
+  -webkit-transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
 }
 
+.header {
+  z-index: 50;
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0px 3px rgba( 0, 0, 0, 0.2 );
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
 
-.header.bar {
+.title {
+  position: absolute;
+  left: 95px;
+  top: 12px;
+  font-size: 36px;
+}
+
+.img {
+  height: 100%;
+}
+
+.card-hr {
 	position: relative;
-	top: -25px;
-	height: -25px;
-	width: 100%;
+	left: -15px;
+	width: 430px;
+	border: 0; 
+	border-top: 5px solid #4183D7;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-h5 {
-	font-weight: 400;
-	font-size: 20px;
-	margin: 5px;
+ul.gNow {
+  width: 450px;
+  float: left;
+  padding: 0;
+  padding-top: 75px;
 }
 
-img {
-	max-width: 80%;
-	height: auto;
+.project-title {
+	font-size: 22px;
 }
 
-.header.name {
-	text-transform: lowercase;
-	padding-top: 50px;
-	padding-left: 25px;
-	text-align: center;
-	font-size: 70px;
-}
-
-.header.nav.bar {
-	position: relative;
-	width: 100%;
-}
-
-.header.nav.list {
-	text-align: center;
+h4 {
 	padding: 0px;
 	margin: 0px;
-}
-
-.header.nav.item {
-	text-transform: lowercase;
+	margin-bottom: 5px;
 	font-size: 24px;
-	list-style: none;
-	display: inline-block;
-	padding: 5px;
+}
+
+ul.gNow li {
+  width: 430px;
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+
+div.card {
+  background: #fff;
+  width: 400px;
+  position: relative;
+  padding: 15px;
+  box-shadow: 0px 3px rgba( 0, 0, 0, 0.1 );
+  color: #444;
+  font-size: 15px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  }
+
+  div.card p {
+    margin: 0 0 15px 0;
+  }
+
+  div.card p.card-title {
+    font-size: 32px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  div.card p.url {
+    border-top: 1px solid #e5e5e5;
+    padding: 0 0 0 0px;
+    height: 30px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: -10px;
+  }
+
+  div.card p.url a {
+    color: #4284E5;
+    text-decoration: none;
+    top: 4px;
+    width: 385px;
+    display: block;
+    position: relative;
+    -webkit-transition: all 75ms linear;
+    -moz-transition: all 75ms linear;
+    -ms-transition: all 75ms linear;
+    -o-transition: all 75ms linear;
+    transition: all 75ms linear;
+  }
+
+  div.card p.url a:hover {
+    color: #7FAAE8;
+    -webkit-transition: all 75ms linear;
+    -moz-transition: all 75ms linear;
+    -ms-transition: all 75ms linear;
+    -o-transition: all 75ms linear;
+    transition: all 75ms linear;
+  } 
+
+  div.card img.full {
+  width: 350px;
+  margin: 0 0 15px -15px;
+  }
+
+  .fa {
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+    padding-right: 7px;
+  }
+
+.blog-title {
+  margin: 0px;
+}
+
+.body-par {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.blog-line {
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #e5e5e5;
 }
 
 a {
-	color: #000;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	word-wrap: break-word;
-	-webkit-transition: all 100ms linear;
-	-moz-transition: all 100ms linear;
-	-ms-transition: all 100ms linear;
-	-o-transition: all 100ms linear;
-	transition: all 100ms linear;
-}
+    color: #4284E5;
+    -webkit-transition: all 75ms linear;
+    -moz-transition: all 75ms linear;
+    -ms-transition: all 75ms linear;
+    -o-transition: all 75ms linear;
+    transition: all 75ms linear;
+  }
 
 a:hover {
-	color: #4D90E8;
-	-webkit-transition: all 100ms linear;
-	-moz-transition: all 100ms linear;
-	-ms-transition: all 100ms linear;
-	-o-transition: all 100ms linear;
-	transition: all 100ms linear;
-}
+    color: #7FAAE8;
+    -webkit-transition: all 75ms linear;
+    -moz-transition: all 75ms linear;
+    -ms-transition: all 75ms linear;
+    -o-transition: all 75ms linear;
+    transition: all 75ms linear;
+  } 
 
-.content.wrapper {
-	padding: 100px;
-	padding-top: 25px;
-	opacity: 1;
-	-webkit-transition: all 100ms linear;
-	-moz-transition: all 100ms linear;
-	-ms-transition: all 100ms linear;
-	-o-transition: all 100ms linear;
-	transition: all 100ms linear;	
-}
+/*Smartphone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-.post.date {
-	font-size: 18px;
-	color: #777;
-}
+  .header {
+    height: 125px;
+  }
 
-.post.title {
-	font-size: 22px;
-	padding-bottom: 5px;
-}
+  ul.gNow {
+    padding-top: 125px;
+  }
 
-.post.date {
-	padding-bottom: 15px;
-}
+  .title {
+    left: 175px;
+    font-size: 72px;
+  }
 
-.post.body {
-	padding-bottom: 25px;
-}
+  div.card p.card-title {
+    font-size: 48px;
+  }
 
-.project.link {
-	padding: 0px;
-	padding-right: 5px;
-	font-weight: 400;
-	font-size: 22px;
-	color: #666;
-}
+  div.card {
+    font-size: 22px;
+  }
 
-.project.link:hover {
-	color: #4D90E8;
-}
+  div.card p.url {
+    font-size: 24px;
+    height: 35px;
+  }
 
-.project.links {
-	padding-top: 5px;
-}
-
-.contact.item {
-	padding-bottom: 10px;
-}
-
-.icon {
-	font-size: 26px;
-	float: left;
-	width: 32px;
-}
-
-.hidden {
-	display: none;
-}
-
-
-@media only screen and (max-width: 480px) {
-
-	.header.name {
-		text-align: center;
-		font-size: 48px;
-	}
-
-	.header.nav.item {
-		display: list-item;	
-	}
-
-	.post.centered {
-		width: 100%;
-		text-align: center;
-	}
-
-	.content.wrapper {
-		max-width: 100%;
-		padding: 25px;
-	}
-
-	.contact.item {
-		padding-left: 25px;
-	}
-
-}
-
-@media only screen and (max-width: 420px) {
-
-	.header.nav.item {
-		font-size: 24px;
-		display: list-item;
-		padding: 5px;
-	}
+  .fa {
+    position: relative;
+    top: 2px;
+    font-size: 26px;
+    padding-right: 14px;
+  }
 
 }
