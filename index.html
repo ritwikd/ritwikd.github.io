@@ -157,7 +157,7 @@
                 var postHTML = makePost(blogPost['regular-title'],
                   blogPost.date,
                   blogPost['regular-body'],
-                  blogPost.urls);
+                  "http://" + blogPost.url);
                 if (postIndex == blogMax[0]) {
                   postHTML = postHTML.substring(0, 22) +'<p class="card-title">Blog</p><hr class="card-hr">' +
                     '<p>Tech, gaming, and whatever else I find interesting.</p>' +
