@@ -23,17 +23,16 @@ body {
   height: 75px;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0px 3px rgba( 0, 0, 0, 0.2 );
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  box-shadow: 0px 4px rgba( 0, 0, 0, 0.2 );
 }
+
 
 .title {
   position: absolute;
   left: 95px;
   top: 12px;
   font-size: 36px;
+  font-weight: 200;
 }
 
 .img {
@@ -58,6 +57,8 @@ ul.gNow {
 }
 
 .project-title {
+  font-weight: 200;
+  text-decoration: bold;
 	font-size: 22px;
 }
 
@@ -80,12 +81,35 @@ div.card {
   width: 400px;
   position: relative;
   padding: 15px;
-  box-shadow: 0px 3px rgba( 0, 0, 0, 0.1 );
+  box-shadow: -3px 3px rgba( 0, 0, 0, 0.1 );
   color: #444;
   font-size: 15px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  -webkit-transition: all 125ms linear;
+  -moz-transition: all 125ms linear;
+  -ms-transition: all 125ms linear;
+  -o-transition: all 125ms linear;
+  transition: all 125ms linear;
+  }
+
+  div.card:hover {
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-transition: all 125ms linear;
+    -moz-transition: all 125ms linear;
+    -ms-transition: all 125ms linear;
+    -o-transition: all 125ms linear;
+    transition: all 125ms linear;
   }
 
   div.card p {
@@ -96,6 +120,7 @@ div.card {
     font-size: 32px;
     margin-top: -10px;
     margin-bottom: 10px;
+    font-weight: 200;
   }
 
   div.card p.url {

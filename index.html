@@ -32,7 +32,7 @@
         <div class="card">
           <p class="card-title">Projects</p>
           <hr class="card-hr">
-          <p class="body-par"><p class="project-title">GT Health Dashboard</p>
+          <p class="body-par"><h3>GT Health Dashboard</h3>
           The GT Health Dashboard is a software project I implemented at Georgia Tech over the summer under the guidance of a professor. It is about creating a free and open-source end-to-end software system for monitoring long term care patients in smart homes.</p>
             <p class="url"><a href="http://gtd.ritwikd.com">
               <i class="fa fa-home"></i>Home</a></p>
@@ -43,20 +43,33 @@
             <p class="url"><a href="assets/gthd.pdf">
               <i class="fa fa-file-text-o"></i>Report</a></p><br>
 
-          <p class="body-par"><p class="project-title">Max Keyboards Key Configuration Utility</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <p class="body-par"><h3>Max Keyboards Key Configuration Utility</h3>
           I created this keyboard configuration utility for Max Leopards. It can be used to create a customized keyboard with a variety of layouts and options. Each key can be individually customized with respect to LED and keycap color. Every key on the page is rendered entirely in CSS. I created this entire page from scratch</p>
             <p class="url"><a href="http://www.maxkeyboard.com/customize/">
               <i class="fa fa-home"></i>Home</a></p><br>
+        </div>
+      </li>
 
-          <p class="body-par"><p class="project-title">K.A.R.E</p>
+      <li>
+        <div class="card">
+          <p class="body-par"><h3>K.A.R.E</h3>
           K.A.R.E is a project that I started at a hackathon with some friends. It is a GitHub recommendation engine that provides repositories similar to user selected repositories. I worked on some of the frontend and backend components of this project.</p>
             <p class="url"><a href="http://kare.progger.io">
               <i class="fa fa-home"></i>Home</a></p>
             <br>
             <p class="url"><a href="http://github.com/arshsab/k.a.r.e">
               <i class="fa fa-github"></i>GitHub</a></p><br>
+        </div>
+      </li>
 
-          <p class="body-par"><p class="project-title">securewallet</p>
+      <li>
+        <div class="card">
+          <p class="body-par"><h3>securewallet</h3>
           securewallet is a cool little password manager I wrote as a side project. It uses 128-bit AES encryption. It's written in pure Python, so theoretically it should work on any platform, but I've only tested on Linux. I wrote this entire application.</p>
             <p class="url"><a href="http://securwallet.ritwikd.com">
               <i class="fa fa-home"></i>Home</a></p>
@@ -64,9 +77,8 @@
             <p class="url"><a href="http://github.com/ritwikd/securewallet">
               <i class="fa fa-github"></i>GitHub</a></p>
         </div>
-
-
       </li>
+
     </ul>
 
     <ul class="gNow" id="col2">
@@ -125,15 +137,12 @@
       postHTML += postTemplate[1] + postDate.substring(0, 16);
       if (postBody.length > 500) {
         postBody = postBody.replace(/\u00a0/g, " ").substring(0, 500) + "..."
-        postBody = postBody.replace(/\u00a0/g, " ");
-        postHTML += postTemplate[2] + postBody;
-        postHTML += postTemplate[3] + postURL;
-        postHTML += postTemplate[4] + postTemplate[5];
       } else {
-        postHTML += postTemplate[2] + postBody + '</p>';
-        postHTML += postTemplate[5];
+        postBody = postBody.replace(/\u00a0/g, " ");
       }
-
+      postHTML += postTemplate[2] + postBody;
+      postHTML += postTemplate[3] + postURL;
+      postHTML += postTemplate[4] + postTemplate[5];
       return postHTML;
     }
 
@@ -205,9 +214,6 @@
     };
 
     centerCards();
-
-
-
     loadBlog(blogMax);
 
 
