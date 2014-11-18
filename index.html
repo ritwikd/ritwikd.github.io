@@ -3,21 +3,24 @@
   <head>
     <link href="http://fonts.googleapis.com/css?family=Roboto:500,400,300" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Ritwik Dutta</title>
   </head>
 
   <body>
 
-    <div class="header">
+    <div class="header animated fadeInLeftBig">
       <img src="assets/img.png" class="img" />      
-      <div class="title">RITWIK DUTTA</div>
+      <div class="title">Ritwik Dutta</div>
     </div>
       
     <ul class="gNow" id="col1">
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInLeftBig">
           <p class="card-title">About</p>
           <hr class="card-hr">
           <p>Hello. I'm a student, programmer, and web-developer, located in California. </p>
@@ -29,7 +32,7 @@
       </li>
 
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInLeftBig">
           <p class="card-title">Projects</p>
           <hr class="card-hr">
           <p class="body-par"><h3>GT Health Dashboard</h3>
@@ -47,16 +50,16 @@
       </li>
 
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInLeftBig">
           <p class="body-par"><h3>Max Keyboards Key Configuration Utility</h3>
-          I created this keyboard configuration utility for Max Leopards. It can be used to create a customized keyboard with a variety of layouts and options. Each key can be individually customized with respect to LED and keycap color. Every key on the page is rendered entirely in CSS. I created this entire page from scratch</p>
+          I created this keyboard configuration utility for Max Keyboards. It can be used to create a customized keyboard with a variety of layouts and options. Each key can be individually customized with respect to LED and keycap color. Every key on the page is rendered entirely in CSS. I created this entire page from scratch</p>
             <p class="url"><a href="http://www.maxkeyboard.com/customize/">
               <i class="fa fa-home"></i>Home</a></p><br>
         </div>
       </li>
 
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInLeftBig">
           <p class="body-par"><h3>K.A.R.E</h3>
           K.A.R.E is a project that I started at a hackathon with some friends. It is a GitHub recommendation engine that provides repositories similar to user selected repositories. I worked on some of the frontend and backend components of this project.</p>
             <p class="url"><a href="http://kare.progger.io">
@@ -68,7 +71,7 @@
       </li>
 
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInLeftBig">
           <p class="body-par"><h3>securewallet</h3>
           securewallet is a cool little password manager I wrote as a side project. It uses 128-bit AES encryption. It's written in pure Python, so theoretically it should work on any platform, but I've only tested on Linux. I wrote this entire application.</p>
             <p class="url"><a href="http://securwallet.ritwikd.com">
@@ -83,7 +86,7 @@
 
     <ul class="gNow" id="col2">
       <li>
-        <div class="card">
+        <div class="card wow animated fadeInRightBig">
           <p class="card-title">Contact</p>
           <hr class="card-hr">
           <p>If you want to contact me, shoot me an email, and I'll respond as soon as possible.</p>
@@ -105,117 +108,16 @@
         
       </div>
 
-      <li>
-        <div class="card">
-          <p class="url"><a href="#" onclick="prevPage(blogMax);">
-            <i class="fa fa-chevron-circle-left"></i>Newer Posts</a></p>
-          <br>
-          <p class="url"><a href="#" onclick="nextPage(blogMax);">
-            <i class="fa fa-chevron-circle-right"></i>Older Posts</a></p>
-        </div>
-      </li>
+      
 
     </ul>
 
   </body>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
+  <script type="text/javascript" src="js/readmore.js"></script>
+  <script type="text/javascript" src="js/md5.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
-    var postTemplate = [
-      '<li><div class="card"><div class="body-par"><h3 class="blog-title">',
-      '</h3>', 
-      '<p>',
-      '</p></div><p class="url"><a href="',
-      '"><i class="fa fa-globe"></i>Read full post</a></p>',
-      '</div></li>'
-    ];
-
-    function makePost(postTitle, postDate, postBody, postURL) {
-      var postHTML = '';
-      postHTML += postTemplate[0] + postTitle;
-      postHTML += postTemplate[1] + postDate.substring(0, 16);
-      if (postBody.length > 500) {
-        postBody = postBody.replace(/\u00a0/g, " ").substring(0, 500) + "..."
-      } else {
-        postBody = postBody.replace(/\u00a0/g, " ");
-      }
-      postHTML += postTemplate[2] + postBody;
-      postHTML += postTemplate[3] + postURL;
-      postHTML += postTemplate[4] + postTemplate[5];
-      return postHTML;
-    }
-
-    var blogMax = [0,5];
-
-    function loadBlog(blogMax) {
-
-      var currentPosts = $(".blog-cards").html();
-
-      $(".blog-cards").html("");
-
-      var loadedPosts = 0;
-
-      $.getJSON('http://ritwikdutta.tumblr.com/api/read/json?callback=?',
-      function(response) {
-            $.each(response.posts, function(postIndex) {
-              blogPost = response.posts[postIndex];
-              if (postIndex >= blogMax[0] && postIndex < blogMax[0] + blogMax[1]) {
-                
-                loadedPosts++;
-                var postHTML = makePost(blogPost['regular-title'],
-                  blogPost.date,
-                  blogPost['regular-body'],
-                  blogPost.url);
-                if (postIndex == blogMax[0]) {
-                  postHTML = postHTML.substring(0, 22) +'<p class="card-title">Blog</p><hr class="card-hr">' +
-                    '<p>Tech, gaming, and whatever else I find interesting.</p>' +
-                    '<hr class="blog-line">' + postHTML.substring(22);
-                }
-                $(".blog-cards").append(postHTML);
-
-              }
-            });
-
-            if (loadedPosts == 0) {
-                $(".blog-cards").html(currentPosts);
-                blogMax[0] -= 5;
-            }
-
-
-      });
-    
-      var images = $('img');
-      for (var i = 0; i < images.length; i++) {
-        images[i].onerror = function () {
-          images[i].css("display", "none");
-        };
-      }
-    }
-
-    function nextPage(blogMax) {
-      blogMax[0] += 5;
-      loadBlog(blogMax);
-    }
-
-    function prevPage(blogMax) {
-      if (blogMax[0] > 0) {
-        blogMax[0] -= 5;
-      }
-      loadBlog(blogMax);
-    }
-    
-    function centerCards() {
-      $("#col1").css("padding-left", (($(window).width()/2) - 450).toString()  + "px");
-    }
-
-    window.onresize = function(event) {
-      centerCards();
-    };
-
-    centerCards();
-    loadBlog(blogMax);
-
-
-  </script>
 </html>
