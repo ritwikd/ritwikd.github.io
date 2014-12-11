@@ -1,13 +1,17 @@
-//Readmore.js
-
+String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
 
 var postTemplate = [
-  '<li><div class="card wow animated fadeInRightBig"><div class="post-content" id="',
-  'par"><h3 class="blog-title">',
-  '</h3><p class="post-date">', 
-  '</p><p class="post-body">',
-  '</p></div></div></li>'
+  '<div class="blog-cont"><div class="post-content" id="',
+  'par"><div class="blog-title emph">',
+  '</div><p class="post-date"><i>', 
+  '</i></p><p class="post-body">',
+  '</p></div></div><br>'
 ];
+
+var readOptions = {
+              moreLink: '<a class="link-link" href="#"><div class="special link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-down"></i>Read more </div> </div> </a>',
+              lessLink: '<a class="link-link" href="#"><div class="special link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-up"></i>Close </div> </div> </a>'
+            };
 
 function makePost(postTitle, postDate, postBody, titleHash) {
   var postHTML = '';
@@ -24,9 +28,9 @@ var blogMax = [0,5];
 
 function loadBlog(blogMax) {
 
-  var currentPosts = $(".blog-cards").html();
+  var currentPosts = $(".blogholder").html();
 
-  $(".blog-cards").html("");
+  $(".blogholder").html("");
 
   var loadedPosts = 0;
 
@@ -43,26 +47,16 @@ function loadBlog(blogMax) {
               blogPost['regular-body'],
               titleHash);
 
-            if (postIndex == blogMax[0]) {
-              postHTML = postHTML.substring(0, 50) +'<p class="card-title">Blog</p><hr class="card-hr">' +
-                '<p>Tech, gaming, and whatever else I find interesting.</p>' +
-                '<hr class="blog-line">' + postHTML.substring(50);
-            }
-            $(".blog-cards").append(postHTML);
-            $("#" + titleHash + "par").readmore({
-              moreLink: '<p class="url"><a href="#"> <i class="fa fa-chevron-circle-down"></i>Read more</a></p>',
-              lessLink: '<p class="url"><a href="#"> <i class="fa fa-chevron-circle-up"></i>Close</a></p>'
-            });
+            $(".blogholder").append(postHTML);
+            $("#" + titleHash + "par").readmore(readOptions);
 
           }
         });
 
         if (loadedPosts == 0) {
-            $(".blog-cards").html(currentPosts);
+            $(".blogholder").html(currentPosts);
             blogMax[0] -= 5;
         }
-
-  $($(".card")[$(".card").length - 1]).append('<br><p class="url"><a href="#" onclick="prevPage(blogMax);"> <i class="fa fa-chevron-circle-left"></i>Newer Posts</a></p> <br> <p class="url"><a href="#" onclick="nextPage(blogMax);"> <i class="fa fa-chevron-circle-right"></i>Older Posts</a></p>');
 
   });
 
@@ -86,16 +80,35 @@ function prevPage(blogMax) {
   loadBlog(blogMax);
 }
 
-function centerCards() {
-  $("#col1").css("padding-left", (($(window).width()/2) - 450).toString()  + "px");
-  $(".header").css("left", (($(window).width()/2) - 440).toString()  + "px");
-}
 
-window.onresize = function(event) {
-  centerCards();
-};
 
-centerCards();
-loadBlog(blogMax);
+$(document).ready(function() {
+   $('.tabs').tabslet({
+		controls: {
+			prev: '.prev',
+			next: '.next'
+		}
+	});
 
-new WOW().init();
+   $(".tabs").on("_after", function () {
+   		if ($("#blog").attr('class').contains('active')) {
+   			loadBlog(blogMax);
+   		}
+   });
+
+	var nav = responsiveNav('.nav', {
+        animate: true,
+        transition: 250,
+        label: '<i class="fa fa-bars"></i>',
+        insert: 'before',
+        customToggle: '',
+        closeOnNavClick: true,
+        openPos: 'relative',
+        navClass: 'nav-collapse',
+        navActiveClass: 'js-nav-active',
+        jsClass: 'js',
+        init: function(){},
+        open: function(){},
+        close: function(){}
+    });
+});
