@@ -13,7 +13,7 @@ body {
 	margin: 0px;
 	font-family: 'Roboto';
 	font-weight: 300;
-	background-color: #4798FF;
+	background-color: #FFF;
 }
 
 .title {
@@ -24,7 +24,7 @@ body {
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: #FFF;
+	color: #4798FF;
 }
 
 .emph {
@@ -34,7 +34,7 @@ body {
 }
 
 .nav {
-	background-color: #F9690E;
+	background-color: #4798FF;
 	font-weight: 300;
 	font-family: "Roboto", sans-serif;
 	width: 100%;
@@ -75,17 +75,18 @@ body {
 }
 
 .nav a:hover {
-	color: #F9690E;
-	background-color: #FFF;	
+	color: #FFF;
+	background-color: #4183D7;	
 }
 
 .active a {
 	font-weight: 400;
-	color: #F9690E;
-	background-color: #FFF;
+	color: #FFF;
+	background-color: #4183D7;
 }
 
 .fa-bars {
+	color: #4798FF;
 	padding: 20px;
 }
 
@@ -121,7 +122,6 @@ body {
 }
 
 .link-cont {
-	margin-top: -25px;
 	font-weight: 300;
 	font-size: 16px;
 	width: 100%;
@@ -129,7 +129,11 @@ body {
 }
 
 .special {
-	margin-top: 5px;
+	margin-top: -25px;
+}
+
+.moveup {
+	margin-top: -5px;
 }
 
 .link-cont .fa {
@@ -137,11 +141,15 @@ body {
 }
 
 .link-cont:hover {
-	background-color: #F9690E;
+	background-color: #4183D7;
 }
 
 .project-cont .fa {
 	font-size: 16px;
+}
+
+.proj-par {
+	margin: 0px;
 }
 
 .contact .fa {
@@ -205,6 +213,57 @@ body {
 	max-width: 300px;
 }
 
+
+.tg {
+	width: 100%;
+	table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    font-weight: 300;
+}
+
+.tg th {
+	font-weight: 300;
+    text-align: left;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.dets {
+	font-weight: 400 !important;
+	font-size: 16px !important;
+}
+
+
+.emph2 {
+	color: #4798FF;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.skills {
+	font-weight: 400;
+	font-size: 22px;
+	color: #4798FF;	
+}
+
+@media only screen and (max-width: 450px) {
+	.tg {
+		width: auto;
+	}
+}
+
 @media only screen and (max-width: 640px) {
 
 	.tabtext {
@@ -228,6 +287,7 @@ body {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
 
 
  .tabtext {
