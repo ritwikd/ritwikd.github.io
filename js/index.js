@@ -9,8 +9,8 @@ var postTemplate = [
 ];
 
 var readOptions = {
-              moreLink: '<a class="link-link" href="#"><div class="special link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-down"></i>Read more </div> </div> </a>',
-              lessLink: '<a class="link-link" href="#"><div class="special link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-up"></i>Close </div> </div> </a>'
+              moreLink: '<a class="link-link" href="#"><div class="movedown link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-down"></i>Read more </div> </div> </a>',
+              lessLink: '<a class="link-link" href="#"><div class="movedown link-cont"> <div class="link-text"> <i class="left fa fa-chevron-circle-up"></i>Close </div> </div> </a>'
             };
 
 function makePost(postTitle, postDate, postBody, titleHash) {
