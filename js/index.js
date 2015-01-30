@@ -80,8 +80,6 @@ function prevPage(blogMax) {
   loadBlog(blogMax);
 }
 
-
-
 $(document).ready(function() {
    $('.tabs').tabslet({
 		controls: {
