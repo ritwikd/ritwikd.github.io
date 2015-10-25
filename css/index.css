@@ -76,6 +76,7 @@ body {
 
 .project-component-left {
 	margin:5px;
+    margin-bottom: 30px;
 	width:30%;
 	height:225px;
 	float:left;
@@ -89,6 +90,7 @@ body {
 
 .project-component-right {
 	margin:5px;
+    margin-bottom: 30px;
 	width:65%;
 	height:225px;
 	float:left;
@@ -108,7 +110,7 @@ body {
 }
 
 .project-component-desc-body {
-    height: 160px;
+    height: 142px;
     overflow: hidden;
 }
 
