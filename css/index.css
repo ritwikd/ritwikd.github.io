@@ -238,13 +238,6 @@ body {
     margin-top: 50px;
 }
 
-.face-primary {
-    height: 6em;
-    float: left;
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
-
 b {
     text-decoration: none;
     color: rgba(0,0,0,0);
@@ -255,4 +248,97 @@ b {
 u {
 	text-decoration:none;
 	border-bottom: 2px solid #FFF;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .section {
+        width: 95%;
+    }
+    
+    .project-component-image {
+        height: 175px;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    .project-component-image {
+        height: 150px;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    .project-container {
+        overflow: hidden;
+        display: inline;
+    }
+    
+    .project-component-image {
+        display: none;
+    }
+    
+    .project-component-holding {
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .project-component-left {
+        display: none;
+    }
+    
+    .project-component-desc-body {
+        height auto;
+    }
+    
+    .section-title {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section-content {
+        padding-top: 5px;
+    }
+    
+    #cmu-right {
+        margin-top: 5px !important;
+    }
+    
+    #edu-right {
+        margin-bottom: -70px !important;
+    }
+    
+    #about-right {
+        margin-bottom: -100px !important;
+    }
+    
+    #maxkeyboard-right {
+        margin-bottom: -20px !important;
+    }
+    
+    .header {
+        width: 80%;
+    }
+    
+    .name {
+        font-size: 3.25em;
+    }
+    
+    .header-link {
+        font-size: 2.3em;
+    }
+    
+    .resume {
+        padding-top: 5px;
+    }
+    
 }
