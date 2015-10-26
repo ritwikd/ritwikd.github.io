@@ -1,6 +1,8 @@
 $(document).ready(function() {
     
     $(".project-component-desc-readmore").click(function(e) {
+        
+        alert("Clicked");
         var targetElemLeft = $("#" + $(this).data("target") + "-left");
         var targetElemRight = $("#" + $(this).data("target") + "-right");
         var targetElemDesc = $("#" + $(this).data("target") + "-right"
