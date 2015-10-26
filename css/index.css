@@ -225,7 +225,12 @@ body {
     transition: all 150ms ease-in-out;
 }
 
-.project-component-desc-readmore:hover {
+.project-component-desc-readmore-link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.project-component-desc-readmore-link:hover {
     color:dodgerblue;
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
