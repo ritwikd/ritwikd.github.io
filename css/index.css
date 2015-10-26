@@ -141,6 +141,7 @@ body {
 .project-component-desc {
     padding: 10px;
 	font-size:0.9em;
+    line-height: 150%;
     font-weight: 400;
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
@@ -197,7 +198,7 @@ body {
 }
 
 .project-component-desc-body {
-    height: 146px;
+    height: 152px;
     min-height: 146px;
     padding-top: 10px;
     overflow: hidden;
@@ -271,7 +272,6 @@ u {
 }
 
 .about-desc {
-    line-height: 150%;
     height: auto;
 }
 

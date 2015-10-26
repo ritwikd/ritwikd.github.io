@@ -18,7 +18,7 @@ $(document).ready(function() {
         } else {
             targetElemLeft.css("height", "225px");
             targetElemRight.css("height", "225px");
-            targetElemDesc.css("height", "146px");
+            targetElemDesc.css("height", "152px");
             $(this).html('More <i class="fa fa-chevron-circle-down"></i>');
         }
         
