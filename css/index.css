@@ -217,6 +217,7 @@ body {
     padding-top: 4px;
     font-weight: 300;
     font-size: 1.2em;
+    color: #FFF;
     text-transform: uppercase;
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
@@ -225,12 +226,7 @@ body {
     transition: all 150ms ease-in-out;
 }
 
-.project-component-desc-readmore-link {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.project-component-desc-readmore-link:hover {
+.project-component-desc-readmore:hover {
     color:dodgerblue;
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;

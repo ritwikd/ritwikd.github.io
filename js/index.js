@@ -6,23 +6,22 @@ $(document).ready(function() {
         var targetElemRight = $("#" + $(this).data("target") + "-right");
         var targetElemDesc = $("#" + $(this).data("target") + "-right"
                               + " .project-component-desc-body");
-        var currentContainerElemHeight = targetElemLeft.css("height");
+        
+        var currentContainerElemHeight = targetElemRight.height();
 
-        if (currentContainerElemHeight != "auto") {
-            alert("Minimizing");
+        if (currentContainerElemHeight == 225) {
             targetElemLeft.css("height", "auto");
             targetElemRight.css("height", "auto");
             targetElemDesc.css("height", "auto");
-            $(this).html('<a class="project-component-desc-readmore-link" href="#">Less <i class="fa fa-chevron-circle-down fa-rotate-180"></i></a>');
+            $(this).html('Less <i class="fa fa-chevron-circle-down fa-rotate-180"></i>');
 
         } else {
             targetElemLeft.css("height", "225px");
             targetElemRight.css("height", "225px");
             targetElemDesc.css("height", "146px");
-            $(this).html('<a class="project-component-desc-readmore-link" href="#">More <i class="fa fa-chevron-circle-down"></i><a>');
+            $(this).html('More <i class="fa fa-chevron-circle-down"></i>');
         }
-    
-        e.preventDefault();
+        
     });
 }); 
 
