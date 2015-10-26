@@ -31,7 +31,11 @@ body {
     top: 12px;
 }
 
+.header-link-container {
+    text-align: center;
+}
 .header-link {
+    text-align: center;
 	display:inline;
 	font-size:2.65em;
     -webkit-transition: all 150ms ease-in-out;
@@ -67,10 +71,6 @@ body {
 
 #resume {
 	padding-right:20px;
-}
-
-.about-desc {
-    font-size: 1.2em;
 }
 
 .section {
@@ -213,7 +213,26 @@ body {
     font-weight: 700;
 }
 
+.project-component-desc-body-link {
+    color: #FFF;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.project-component-desc-body-link:hover {
+    color: dodgerblue;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
 .project-component-desc-readmore {
+    text-align: center;
     padding-top: 4px;
     font-weight: 300;
     font-size: 1.2em;
@@ -249,6 +268,23 @@ b {
 u {
 	text-decoration:none;
 	border-bottom: 2px solid #FFF;
+}
+
+.about-desc {
+    line-height: 150%;
+    height: auto;
+}
+
+#about-right {
+    height: auto;
+}
+
+#contact-right {
+    font-size: 1.3em;
+}
+
+#contact-right .fa {
+    padding-right: 10px;
 }
 
 
@@ -304,6 +340,7 @@ u {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     
     .section-content {
@@ -319,7 +356,13 @@ u {
     }
     
     #about-right {
-        margin-bottom: -100px !important;
+        margin-bottom: -0px !important;
+        height: auto;
+    }
+    
+    .about-desc {
+        line-height: 150%;
+        height: auto;
     }
     
     #maxkeyboard-right {
@@ -336,10 +379,15 @@ u {
     
     .header-link {
         font-size: 2.3em;
+        text-align: center;
     }
     
-    .resume {
+    #resume {
         padding-top: 5px;
+        display: block;
+    }
+    
+    .blog {
         display: block;
     }
 
