@@ -13,19 +13,19 @@
         
         <div class="header">
             <div class="name">
-                Ritwik Dutta
+                Ritwik 
+                Dutta
             </div>
             
             <div class="header-link-container">
                 
                 <div class="header-link" id="resume">
-                    <a href="assets/resume.pdf">
+                    <a href="assets/resume.pdf" target="_blank">
                         <i class="fa fa-user"></i>Resume
                     </a>
                 </div>
-                
-                <div class="header-link">
-                    <a href="http://blog.ritwikd.com">
+                <div class="header-link" >
+                    <a href="http://blog.ritwikd.com" target="_blank">
                         <i class="fa fa-book"></i>Blog
                     </a>
                 </div>
@@ -38,7 +38,23 @@
             <div class="section-title"><u>about</u></div>
             
             <div class="section-content">
-                Hi, I'm Ritwik Dutta, a student and developer. My passions are computer science, web and software development, Counter-Strike, and writing. 
+                <div class="project-container">
+                    
+                    <div id="contact-left" class="project-component-holding project-component-left">
+                        <img class="project-component-image" src="assets/face.png">
+                    </div>
+                    <div id="contact-right" class="project-component-holding project-component-right" style="margin-bottom:40px;">
+                        <div class="project-component-desc">
+                            <div class="project-component-desc-body about-desc">
+                                Hi, I'm Ritwik Dutta, a student and developer. My passions are computer science, web and software development, Counter-Strike, and writing. 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+ 
+                    
+                </div>
             </div>
         
         </div>
@@ -50,51 +66,96 @@
                 
                 <div class="project-container">
                 
-                    <div class="project-component-holding project-component-left"  style="margin-top: 20px;">
+                    <div id="cmu-left" class="project-component-holding project-component-left"  style="margin-top: 20px;">
                         <img class="project-component-image" src="assets/projicons/cmuproj.png">
                     </div>
-                    <div class="project-component-holding project-component-right"  style="margin-top: 20px;">
+                    <div id="cmu-right" class="project-component-holding project-component-right"  style="margin-top: 20px;">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
-                                CMU Paper
+                                Fairness Analysis of Academic Social Networks
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://ritwikd.com/assets/cmupaper.pdf" target="_blank">
+                                        <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="project-component-desc-body">
-                          Attached is an academic paper I wrote based on my research on academic social networks. I did my research this past summer (2015) with Professor Radu Marculescu and his graduate students in the Department of Electrical and Computer Engineering at CMU. I was interested in big data before, and this research gave me big insight into efficient extraction, sensible representation, and meaningful analysis of large electronic data sets. Review of existing literature and past work also taught me about network science and use of graph theory in predictive analysis. The analysis methodology we proposed in the paper can handle a complex set of variables, hence can be extended to analyze different types of complex social networks. In particular, I believe our results can be used to guide and optimize policies regarding the rules of engagement in different academic events. The project was not only a great learning experience, I also made new friends in Professor Marculescu's graduate student group. 
+                          Worked with Professor Radu Marculescu at Carnegie Mellon University last summer (2015) on big-data analysis of academic social networks. I investigated how different participants in an academic conference collaborate, and outlined a methodology to characterize the “fairness” of such collaborations. An “unfair” collaboration would be one where relationships (between authors and program committee members) that were conflicts of interest either gave some authors advantages, or others disadvantages, in paper acceptance likelihood and co-authorship desirability. I focused on capturing the relationship between the program committee members and the regular authors of a conference, including co-authorship and institutional linkages, and derived a quotient to quantify the “fairness” of the collaboration, hence that of the conference. My findings offer insights into the evolution of special communities or interest groups that tend to form in an academic network with the sole purpose of promoting interests with regard to professional growth of individuals in these communities at the cost of denying privileges to individuals outside the communities. My results can be used to guide and optimize policies regarding the rules of engagement in academic conferences and workshops; the methodology is applicable to a study of other complex social networks as well.
                             </div>
-                            <div class="project-component-desc-readmore" onclick="alert('Clicked');">
-                                    Read more <i class="fa fa-info-circle"></i>
+                            <div class="project-component-desc-readmore" data-target="cmu">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project-component-holding project-component-left">
+                    <div id="gthd-left" class="project-component-holding project-component-left">
                         <img class="project-component-image" src="assets/projicons/gthd.png">
                     </div>
-                    <div class="project-component-holding project-component-right">
+                    <div id="gthd-right" class="project-component-holding project-component-right">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
-                                GTHD
+                                Georgia Tech Health Dashboard
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://ritwikd.com/assets/gthd.pdf" target="_blank">
+                                        <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                </div>
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://gtd.ritwikd.com" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
                             </div>
+                            
                             <div class="project-component-desc-body">
+                                Worked with Professor Marilyn Wolf at Georgia Tech last year (2014) and implemented health dashboard software for collecting patient data in smart homes using household sensors like cameras and fitness bracelets. I used various web (HTML, CSS, JavaScript), database (Mongo), server (Flask, SimpleHTTPServer), and cloud computing (Jawbone) technologies to design the software, and had to carefully consider various design tradeoffs. I chose Mongo over an SQL database because it is easier to deploy, Flask over a Django web framework because it is lighter and simpler to use, and SimpleHTTPServer over more typical nginx or Apache web servers because it has no external dependencies. The front- end of the software allows adding users, logging into the system, selecting health data of interest, specifying health goals, and displaying user health metrics against target goals with correlations between metrics, e.g., sleep or movement versus weather pattern. The back-end comprises a database that stores user profiles and health data. The software provides a foundation on which a real-life health monitoring system can be easily built.
                             </div>
-                            <div class="project-component-desc-readmore" onclick="alert('Clicked');">
-                                    Read more <i class="fa fa-info-circle"></i>
+                            <div class="project-component-desc-readmore" data-target="gthd">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project-component-holding project-component-left">
+                    <div id="kare-left" class="project-component-holding project-component-left">
                         <img class="project-component-image" src="assets/projicons/kare.png">
                     </div>
-                    <div class="project-component-holding project-component-right" style="margin-bottom:60px;">
+                    <div id="kare-right" class="project-component-holding project-component-right" style="margin-bottom:60px;">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
-                                KARE
+                                K.A.R.E Recommendation Engine
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://kare.progger.io" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="project-component-desc-body">
+                                Created a recommendation engine for GitHub - the free-to-use software storage website. If a user specifies a software project of interest, KARE finds and recommends other similar projects on GitHub. The text box next to the logo on the KARE website is where a user specifies a project of interest. For example, if a user selects a project called "d3", which contains software for drawing charts and graphs on websites, a column will appear on the left, titled "Results for d3”, and will contain a list of similar software projects generated by KARE. Last time I ran a query, three example results returned by KARE were "sigma.js" - another graph drawing library, "dc.js" - a 3D graphing library, and "cube" - a chart visualization tool. KARE obtains these matching results by counting how many of the same users “liked” each repository – the higher the count, the better
                             </div>
-                            <div class="project-component-desc-readmore" onclick="alert('Clicked');">
-                                    Read more <i class="fa fa-info-circle"></i>
+                            <div class="project-component-desc-readmore" data-target="kare">
+                                    More <i class="fa fa-chevron-circle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="edu-left" class="project-component-holding project-component-left">
+                        <img class="project-component-image" src="assets/projicons/jspreso.png">
+                    </div>
+                    <div id="edu-right" class="project-component-holding project-component-right" style="margin-bottom:60px;">
+                        <div class="project-component-desc">
+                            <div class="project-component-desc-title">
+                                Intro to Computer Science using JavaScript
+                                <div class="project-component-desc-title-link">
+                                    <a href="assets/pres.pdf" target="_blank">
+                                        <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-component-desc-body">
+                                Prepared a comprehensive set of educational slides for my school computer science club and robotics camp to introduce computer science concepts using JavaScript (JS). I have organized my ideas and opinions, as well as used my own JS programs, to explain the concepts I learned from different textbooks and the web. I have touched upon the fundamentals of computers, basics of JS, and common data structures and algorithms first, before including interesting programming concepts from one of my favorite books, Structure and Interpretation of Computer Programs (SICP). SICP influenced my ideas on computers and programming, and I wished to share my thoughts and perspectives on this topic with others. I started on importing some of the interesting concepts from SICP, but have so far only got to Higher Order Functions and Function Abstractions; I hope to soon cover more of the concepts from SICP, and convert its illustrative examples from Scheme (the language used in the book) to JS.
+                            </div>
+                            <div class="project-component-desc-readmore" data-target="edu">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
@@ -114,52 +175,89 @@
             <div class="section-content">
                 
                 <div class="project-container">
-                
-                    <div class="project-component-holding project-component-left"  style="margin-top: 20px;">
+                    
+                    <div id="freshpay-left" class="project-component-holding project-component-left">
                         <img class="project-component-image" src="assets/projicons/freshpay.png">
                     </div>
-                    <div class="project-component-holding project-component-right" style="margin-top: 20px;">
+                    <div id="freshpay-right" class="project-component-holding project-component-right" style="margin-bottom:40px;">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
                                 FreshPay
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://lytmus.io" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="project-component-desc-body">
-                          
+                                <br>
+                                <div class="project-component-desc-body-time">
+                                    October 2015 - Present
+                                </div>
+                                <br>
+                                Was hired as independent contractor by FreshPay Inc., a San Francisco-based Silicon Valley startup looking to revolutionize the payments space and do something new with the utilization of digitial currencies. I am a system engineer for the company's backend  and I complete maintenance and extensions for an in-place task-management system.
+                            </div>
+                            <div class="project-component-desc-readmore" data-target="freshpay">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project-component-holding project-component-left">
+                    <div id="lytmus-left" class="project-component-holding project-component-left">
                         <img class="project-component-image" src="assets/projicons/lytmus.png">
                     </div>
-                    <div class="project-component-holding project-component-right">
+                    <div id="lytmus-right" class="project-component-holding project-component-right" style="margin-bottom:40px;">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
                                 Lytmus
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://lytmus.io" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="project-component-desc-body">
+                                <br>
+                                <div class="project-component-desc-body-time">
+                                    October 2015 - Present
+                                </div>
+                                <br>
+                                Was hired as an external software consultanty by Lytmus, a San Francisco-based company looking to revolutionize the sourcing and assessment of technical talent using a sophisticated virtual-machine beased platform that allows engineers to demonstrate their knowledge in realistic and practical settings and simultaneously providing useful, high-quality data to potential employers. I provided detailed feedback and analysis of the challenges and tests created to further refine the target and quality of assessments so they provided more meaningful data to potential employers.
                             </div>
-                            <div class="project-component-desc-readmore" onclick="alert('Clicked');">
-                                    Read more <i class="fa fa-info-circle"></i>
+                            <div class="project-component-desc-readmore" data-target="lytmus">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project-component-holding project-component-left">
+                    <div id="maxkeyboard-left" class="project-component-holding project-component-left">
                         <img class="project-component-image" src="assets/projicons/maxkeyboard.png">
                     </div>
-                    <div class="project-component-holding project-component-right" style="padding-bottom:40px;">
+                    <div id="maxkeyboard-right" class="project-component-holding project-component-right" style="margin-bottom:40px;">
                         <div class="project-component-desc">
                             <div class="project-component-desc-title">
                                 MAXKeyboard
+                                <div class="project-component-desc-title-link">
+                                    <a href="http://maxkeyboard.com/customize" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="project-component-desc-body">
+                                <br>
+                                <div class="project-component-desc-body-time">
+                                    June 2014 - July 2014
+                                </div>
+                                <br>
+                                Was hired as an external project leader and frontend engineer by MAXKeyboard, a Fremont, CA-based custom-keyboard designer. The existing platform for consumer-side customization of keyboards was a phone call from the buyer to the company describing the ideal customization. I created an online keyboard-configuration application with a primarily ecommerce-focused design where the user could intuitively customize  a realistic-looking imageless keyboard rendered using raw CSS and HTML. 
                             </div>
-                            <div class="project-component-desc-readmore" onclick="alert('Clicked');">
-                                    Read more <i class="fa fa-info-circle"></i>
+                            <div class="project-component-desc-readmore" data-target="maxkeyboard">
+                                    More <i class="fa fa-chevron-circle-down"></i>
                             </div>
                         </div>
                     </div>
+                    
+ 
                     
                 </div>
                 
@@ -173,6 +271,8 @@
             <div class="section-title"><u>contact</u></div>
             
             <div class="section-content">
+                
+
             
             </div>
         
