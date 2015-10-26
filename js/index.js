@@ -2,14 +2,14 @@ $(document).ready(function() {
     
     $(".project-component-desc-readmore").click(function(e) {
         
-        alert("Clicked");
         var targetElemLeft = $("#" + $(this).data("target") + "-left");
         var targetElemRight = $("#" + $(this).data("target") + "-right");
         var targetElemDesc = $("#" + $(this).data("target") + "-right"
                               + " .project-component-desc-body");
-        var currentContainerElemHeight = targetElemLeft.height();
+        var currentContainerElemHeight = targetElemLeft.css("height");
 
-        if (currentContainerElemHeight == 225) {
+        if (currentContainerElemHeight != "auto") {
+            alert("Minimizing");
             targetElemLeft.css("height", "auto");
             targetElemRight.css("height", "auto");
             targetElemDesc.css("height", "auto");
