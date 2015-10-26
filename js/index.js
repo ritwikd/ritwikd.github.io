@@ -1,52 +1,28 @@
 $(document).ready(function() {
+    
+    $(".project-component-desc-readmore").click(function(e) {
+        
+        var targetElemLeft = $("#" + $(this).data("target") + "-left");
+        var targetElemRight = $("#" + $(this).data("target") + "-right");
+        var targetElemDesc = $("#" + $(this).data("target") + "-right"
+                              + " .project-component-desc-body");
+        
+        var currentContainerElemHeight = targetElemRight.height();
 
-  var startingTab = 1;
-  var startingURLHash = location.hash.substring(1);
-  location.hash = "";
-  if (startingURLHash.length > 0) {
-    switch(startingURLHash) {
-      case "projects":
-        startingTab = 2;
-        break;
-      case "contact":
-        startingTab = 3;
-        break;
-      case "blog":
-        window.location.replace("http://blog.ritwikd.com");
-        break;
-    }
-  }
+        if (currentContainerElemHeight == 225) {
+            targetElemLeft.css("height", "auto");
+            targetElemRight.css("height", "auto");
+            targetElemDesc.css("height", "auto");
+            $(this).html('Less <i class="fa fa-chevron-circle-down fa-rotate-180"></i>');
 
-   $('.tabs').tabslet({
-    active: startingTab, 
-    animation: true
-	});
-
-   $(".tabs").on("_after", function () {
-   		if ( $("#tab-1").css("display") === "block") {
-        location.hash = "about";
-      }
-      if ( $("#tab-2").css("display") === "block") {
-        location.hash = "projects";
-      }
-      if ( $("#tab-3").css("display") === "block") {
-        location.hash = "contact";
-      }
-   });
-
-	var nav = responsiveNav('.nav', {
-        animate: true,
-        transition: 250,
-        label: '<i class="fa fa-bars"></i>',
-        insert: 'before',
-        customToggle: '',
-        closeOnNavClick: true,
-        openPos: 'relative',
-        navClass: 'nav-collapse',
-        navActiveClass: 'js-nav-active',
-        jsClass: 'js',
-        init: function(){},
-        open: function(){},
-        close: function(){}
+        } else {
+            targetElemLeft.css("height", "225px");
+            targetElemRight.css("height", "225px");
+            targetElemDesc.css("height", "146px");
+            $(this).html('More <i class="fa fa-chevron-circle-down"></i>');
+        }
+        
     });
-});
+}); 
+
+    
