@@ -340,6 +340,8 @@ u {
     
     .resume {
         padding-top: 5px;
+        display: block;
     }
+
     
 }
