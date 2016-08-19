@@ -248,8 +248,8 @@ body
 .modal.sep
 {
     position: relative;
-    left: -30%;
-
+    float: left;
+    clear: left;
     width: 40%;
     height: 3px;
     margin-top: 10px;
@@ -261,6 +261,7 @@ body
 .modal.text
 {
     font-size: 18px;
+    padding-bottom: 15px;
 }
 
 .modal.link
@@ -295,70 +296,6 @@ i[class*='icon-']
     font-size: 18px;
 
     padding-left: 2px;
-}
-
-@media only screen and (max-width: 2000px)
-{
-    .section
-    {
-        width: 75%;
-    }
-}
-
-@media only screen and (max-width: 1500px)
-{
-    .section
-    {
-        width: 85%;
-    }
-
-    .modal .container
-    {
-        width: 75%;
-    }
-}
-
-@media only screen and (max-width: 1000px)
-{
-    .section
-    {
-        width: 90%;
-    }
-
-    .modal .container
-    {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 800px)
-{
-    canvas
-    {
-        opacity: .7;
-
-           -moz-filter: blur(2px);
-             -o-filter: blur(2px);
-            -ms-filter: blur(2px);
-        -webkit-filter: blur(2px);
-                filter: blur(2px);
-    }
-}
-
-@media only screen and (max-width: 550px)
-{
-    .modal .container
-    {
-        padding: 0;
-    }
-}
-
-@media only screen and (max-height: 400px)
-{
-    .header .section
-    {
-        margin-top: 0;
-    }
 }
 
 .content.section
@@ -414,14 +351,19 @@ i[class*='icon-']
     background-color: black;
 }
 
+
+.modal.text {
+    width: 80%;
+    clear: left;
+}
 .modal.text .header
 {
     font-family: 'Work Sans', sans-serif;
     font-size: 28px;
     font-weight: 300;
-
     margin-top: 25px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+
 
     text-transform: uppercase;
 }
@@ -437,12 +379,10 @@ i[class*='icon-']
         -ms-transform: scale(1.1, 1.1); /* IE 9 */
             transform: scale(1.1, 1.1);
 }
-
 .modal.text .description
 {
     font-size: 16px;
 
-    width: 80%;
 }
 
 .modal.text .times
@@ -461,3 +401,171 @@ i[class*='icon-']
     padding-right: 10px;
     padding-left: 5px;
 }
+
+.modal.text .pic {
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+    clear: both;
+    width: 36px;
+    height: 36px;
+    margin-top: -1px;
+}
+
+.modal.text .subtitle {
+    float: right;
+    clear: right;
+}
+
+.modal.text .companyname {
+    font-size: 26px;
+    display: inline-block;
+    width: 220px;
+}
+
+.modal.text .projectname {
+    display: inline-block;
+    font-size: 24px;
+    width: 550px;
+
+}
+
+.modal.text .about.description {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 2000px)
+{
+    .section
+    {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1500px)
+{
+    .section
+    {
+        width: 85%;
+    }
+
+    .modal .container
+    {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .section
+    {
+        width: 90%;
+    }
+
+    .modal .container
+    {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 875px)
+{
+    canvas
+    {
+        opacity: .7;
+
+           -moz-filter: blur(2px);
+             -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+    }
+
+    .modal.text {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 745px)
+{
+    .modal.text .companyname {
+        width: auto;
+    }
+
+    .modal.text .projectname {
+        width: auto;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project .fa {
+        float: right;
+    }
+
+    .modal.text .projectname {
+        float: left;
+        clear: left;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px)
+{
+    .modal .container
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .modal.text .companyname {
+        margin-bottom: 5px;
+        min-width: 82%;
+    }
+
+    .modal.text .times {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .modal.text .companyname {
+        width: 225px;
+        margin-bottom: 5px;
+    }
+
+    .fa-globe {
+        font-size: 75% !important;
+    }
+
+    .modal.text .times {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .modal.text .companyname {
+        min-width: 41%;
+        max-width: 72% !important;
+    }
+
+    .work .header .fa {
+        font-size: 80%;
+    }
+
+    .modal.text .times {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-height: 400px)
+{
+    .header .section
+    {
+        margin-top: 0;
+    }
+
+}
+
