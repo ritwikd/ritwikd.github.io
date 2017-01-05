@@ -307,3 +307,27 @@ body {
     font-weight: 600;
     padding-bottom: 3px;
 }
+
+@media screen and (max-width: 750px) {
+    .content {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: auto;
+    }
+    .employment li .job {
+        width: auto;
+    }
+    .skills li .cat {
+        width: auto;
+    }
+}
