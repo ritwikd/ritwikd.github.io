@@ -233,10 +233,22 @@ a.btn:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 .header .contact-info li a {
-  color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1.0);
 }
+
+.header .contact-info li a i.fa {
+  font-size: 20px; 
+  position: relative;
+  top: 1px;
+}
+
 .header .contact-info li a:hover {
-  color: #fff;
+  text-decoration: none;
+  color: #008fa1;
+  background-color: #FFF;
+
 }
 .header .contact-info li:last-child {
   margin-right: 0;
@@ -823,6 +835,7 @@ a.btn:hover {
   .header .contact-info li:last-child {
     margin-bottom: 0;
   }
+
   .section {
     padding: 30px;
   }
