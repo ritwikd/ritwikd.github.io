@@ -523,6 +523,11 @@ a.btn:hover {
 .skills-section .desc {
   color: #666;
 }
+
+.skills-section .skill-name {
+  margin-bottom: 20px;
+}
+
 .skills-section .skill-tag {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
