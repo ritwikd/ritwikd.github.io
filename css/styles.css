@@ -241,7 +241,7 @@ a.btn:hover {
 .header .contact-info li a i.fa {
   font-size: 20px; 
   position: relative;
-  top: 1px;
+  top: 1  px;
 }
 
 .header .contact-info li a:hover {
