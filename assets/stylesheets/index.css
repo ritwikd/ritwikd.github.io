@@ -1,3 +1,10 @@
+* {
+  -webkit-transition: all 0.12s 0s ease-in;
+-moz-transition: all 0.12s 0s ease-in;
+-o-transition: all 0.12s 0s ease-in;
+transition: all 0.12s 0s ease-in;
+}
+
 html, body {
 	background-color: #fefefe;
 	font-family: 'Arimo', sans-serif;
@@ -156,4 +163,58 @@ html, body {
 
 .id-label {
 	padding-right: 10px;
+}
+
+.body-dark-mode {
+  background-color: #232323;
+  color: #EFEFEF;
+}
+
+.face-dark-mode {
+  border: 5px solid #444;
+}
+
+.identity-link-dark-mode {
+    color: #EFEFEF;
+    background: #444;
+}
+
+.job-meta-dark-mode {
+  background: #555;
+}
+
+.image-invert-dark-mode {
+  filter: invert(1);
+}
+
+.invert-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  background-color: #E7F4FF;
+  color: #173a75;
+  padding: 5px;
+  min-width: 52px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.invert-button:hover {
+  cursor: pointer;
+}
+
+.inv-hover:hover {
+    background-color: #173a75;
+  color: #E7F4FF;
+}
+
+.invert-button-dark-mode {
+  color: #EFEFEF;
+  background-color: #555;
+}
+
+.invert-button-dark-mode:hover {
+  color: #555;
+  background-color: #EFEFEF;
 }

@@ -6,9 +6,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
-	<title></title>
+	<title>Ritwik Dutta</title>
 </head>
 <body>
+	<div class="invert-button inv-hover" onclick="toggleDark();">
+		<i class="fa-solid fa-sun invert-logo-day"></i>
+		<i class="fa-solid fa-moon invert-logo-night"></i>
+	</div>
 	<div class="container main-content">
 		<div class="row">
 			<div class="col face-col">
@@ -46,7 +50,7 @@
 		<div class="work-item">
 			<div class="company-name">
 				<div class="company-name-text">
-					<img class="company-logo" src="assets/images/logos/apple_dark.png">
+					<img class="company-logo apple-logo" src="assets/images/logos/apple_dark.png">
 					Apple
 				</div>
 				<div class="job-title">
@@ -65,7 +69,7 @@
 		<div class="work-item">
 			<div class="company-name">
 				<div class="company-name-text">
-					<img class="company-logo" src="assets/images/logos/apple_dark.png">
+					<img class="company-logo apple-logo" src="assets/images/logos/apple_dark.png">
 					Apple
 				</div>
 				<div class="job-title">
@@ -84,7 +88,7 @@
 		<div class="work-item">
 			<div class="company-name">
 				<div class="company-name-text">
-					<img class="company-logo" src="assets/images/logos/apple_dark.png">
+					<img class="company-logo apple-logo" src="assets/images/logos/apple_dark.png">
 					Apple
 				</div>
 				<div class="job-title">
@@ -103,7 +107,7 @@
 		<div class="work-item">
 			<div class="company-name">
 				<div class="company-name-text">
-					<img class="company-logo" src="assets/images/logos/apple_dark.png">
+					<img class="company-logo apple-logo" src="assets/images/logos/apple_dark.png">
 					Apple
 				</div>
 				<div class="job-title">
@@ -149,4 +153,52 @@
 </body>
 <script src="https://kit.fontawesome.com/ad6a6cf280.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js" integrity="sha512-F6rjAEKNMtM0aODcc/MdnAvhGxn7FCbAkKJ5FKba/fnD3gnN+LBEok326WAMdOhKQKYNr+j/tJEuV1PKwIfhCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    function toggleDisplay(elementClassName) {
+        (function(style) {
+            style.display = style.display === 'none' ? 'inline-block' : 'none';
+        })(document.querySelector(elementClassName).style);
+    }
+
+	function toggleDark() {
+	  	var bodyElem = document.body;
+	  	var htmlElem = document.querySelector('html');
+  		bodyElem.classList.toggle("body-dark-mode");
+  		htmlElem.classList.toggle("body-dark-mode");
+
+  		var faceElem = document.querySelector('.face');
+  		faceElem.classList.toggle("face-dark-mode");
+
+  		var identityLinkElems = document.getElementsByClassName('identity-link');
+  		for (const identityLinkElem of identityLinkElems) {
+    		identityLinkElem.classList.toggle("identity-link-dark-mode");
+		}
+
+  		var jobTitleElems = document.getElementsByClassName('job-title');
+  		for (const jobTitleElem of jobTitleElems) {
+    		jobTitleElem.classList.toggle("job-meta-dark-mode");
+		}
+
+  		var jobLengthElems = document.getElementsByClassName('job-length');
+  		for (const jobLengthElem of jobLengthElems) {
+    		jobLengthElem.classList.toggle("job-meta-dark-mode");
+		}
+
+  		var appleLogoElems = document.getElementsByClassName('apple-logo');
+  		for (const appleLogoElem of appleLogoElems) {
+    		appleLogoElem.classList.toggle("image-invert-dark-mode");
+		}
+
+		var invertButtonElem = document.querySelector('.invert-button');
+  		invertButtonElem.classList.toggle("invert-button-dark-mode");
+  		invertButtonElem.classList.toggle("inv-hover");
+  		toggleDisplay('.invert-logo-day');
+  		toggleDisplay('.invert-logo-night');
+	}
+
+	toggleDisplay('.invert-logo-day');
+
+	if (new Date().getHours() > 19) { toggleDark(); }
+</script>
 </html>
