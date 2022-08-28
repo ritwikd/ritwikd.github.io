@@ -199,6 +199,11 @@
 
 	toggleDisplay('.invert-logo-day');
 
-	if (new Date().getHours() > 19) { toggleDark(); }
+	if (new Date().getHours() > 19) {
+		toggleDark();
+	}
+	if (new Date().getHours() < 5) {
+		toggleDark();
+	}
 </script>
 </html>
